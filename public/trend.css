@@ -1,0 +1,101 @@
+ .book-overlay{
+    opacity: 0.2;
+     background: black;
+     width: 217px !important;
+     height: 265px !important;
+     border-radius: 12px;
+     position: absolute;
+     z-index: 9999;
+
+     
+}
+
+.book-overlay:hover{
+opacity: 0.6;
+
+}
+
+/* .overlay-btn{
+list-style: none;
+text-decoration: none;
+color: white;
+background: black;
+padding: 10px 0;
+position: absolute;
+top: 192px;
+border: 1px solid gray;
+width: 194px;
+text-align: center;
+left: 39px;
+cursor: pointer;
+
+} */
+
+@media only screen and (max-width: 1200px){
+.book-overlay {
+    opacity: 0.2;
+     background: black;
+     position: absolute;
+     width: 217px !important;
+     height: 265px !important;
+     border-radius: 12px;
+}
+
+.book-overlay:hover {
+opacity: 0.6;
+
+
+}
+/* .overlay-btn {
+list-style: none;
+text-decoration: none;
+color: white;
+background: black;
+padding: 10px 0;
+position: absolute;
+top: 84px;
+border: 1px solid gray;
+width: 140px;
+text-align: center;
+left: 17px;
+cursor: pointer;
+}  */
+
+}
+
+.book-cover
+{
+    width: 217px !important;
+    height: 265px !important;
+    border-radius: 12px;
+    position: relative;
+}
+.trend-book{
+    /* background-image: url(img/book.jpeg) !important; */
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 217px !important;
+    height: 265px !important;
+    border-radius: 12px;
+}
+
+
+#star{
+    border-radius: 17px;
+    background: orange;
+    padding: 8px;
+    color: white;
+}
+.rate{
+    padding: 4px;
+    border: 1px solid #8080803d;
+     margin: 9px;
+
+    border-radius: 12px;
+    width: 82px;
+    z-index: 9999;
+
+
+
+}
