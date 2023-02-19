@@ -11,11 +11,8 @@
 
     <title>home</title>
 
-
 </head>
 <body>
-
-
 <div class="container mt-4 col-md-12 text-center">
 <div class="row align-items-baseline">
 <div class="col-lg-3  md-5">
@@ -36,41 +33,23 @@
         <i class="fas fa-cart-plus px-3 pt-2" style="color:#6c5dd4;"></i>
     </div>
 
-  @if(Auth::check())
-<div class="md-5 mt-2 mx-3">
+    <div class="md-5 mt-2 ">
+        <button class="account text-decoration-none" >
+            <a class=" text-decoration-none text-light border border-0" href="{{route('users.reg')}}">
+                sign up
+            </a>
+                </button>
+      </div>
+    <div class="md-5 mt-2 mx-3">
 
-    <button  class="account" >
-     <a class=" text-decoration-none text-light border border-0" href="">
-     {{Auth::user()->name}}
-    </a>
-    </button>
-</div>
-<div class="md-5 mt-2 mx-3">
-
-    <button  class="account" >
-     <a class=" text-decoration-none text-light border border-0" href="{{ route('user.test') }}">
-logout
-    </a>
-    </button>
-</div>
-  @elseif(!Auth::user())
-  <div class="md-5 mt-2">
-    <button class="account text-decoration-none" >
-        <a class=" text-decoration-none text-light border border-0" href="{{route('users.reg')}}">
-            sign up
+        <button  class="account " >
+         <a class=" text-decoration-none text-light border border-0" href="{{ route('login.page') }}">
+            sign in
         </a>
-            </button>
-  </div>
-<div class="md-5 mt-2 mx-3">
+        </button>
+    </div>
 
-    <button  class="account " >
-     <a class=" text-decoration-none text-light border border-0" href="{{ route('login.page') }}">
-        sign in
-    </a>
-    </button>
-</div>
 
-@endif
 
 
 
@@ -86,10 +65,10 @@ logout
 <!-- NAV BAR START  -->
 <nav>
      <ul>
-      <li>
-        <a class="active" href="{{ url('/') }}">Home</a>
-     </li>
-      <li><a href="#">Books</a></li>
+        <li>
+            <a class="active" href="{{ url('/') }}">Home</a>
+        </li>
+              <li><a href="#">Books</a></li>
       <li><a href="#">Textbooks</a></li>
       <li><a href="#">Audiobooks</a></li>
       <li><a href="#">Sale</a></li>
@@ -106,31 +85,6 @@ logout
 <!-- NAV BAR END  -->
 
 <!-- start cover section -->
-
- <div class="PHOTO position-relative ">
-
-    <div class="container position-absolute " style="z-index:999;">
-        <div class="col-lg-8 mt-lg-5 pt-lg-5 col-sm pt-2" id="cover-content">
-            <h1 class="text-light">find over 20 million</h1>
-            <h1 class="text-light">Book here</h1>
-            <p class="text-light col-sm p-0" id="cover-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eligendi odit repellat dicta, rerum fugit exercitationem vitae amet culpa itaque consequatur enim saepe eum. At aliquam harum ipsam amet nulla?</p>
-      <button class="border border-0 bg-none mt-lg-4">
-           <a href="http://" class="collection   ">Go To Collection</a>
-        </button>
-
-
-        </div>
-        </div>
-    <div class="overlay">
-    </div>
-           <div class="background">
-            </div>
-
-
-        </div>
-
-
-
 
 
 
@@ -219,7 +173,7 @@ logout
         <span class="d-block text-secondary pt-3">Contact us</span>
         <span class="d-block text-secondary pt-3">Products</span>
         <span class="d-block text-secondary pt-3">Login</span>
-        <span class="d-block text-secondary pt-3">Sign up</span>
+        <span class="d-block text-secondary pt-3">Sign Up</span>
     </div>
     <div class="col-xl-3 col-lg-4 my-3   col-md-6 col-sm-12 py-5">
         <h3>

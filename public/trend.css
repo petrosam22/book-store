@@ -7,30 +7,36 @@
      position: absolute;
      z-index: 9999;
 
-     
+
 }
 
 .book-overlay:hover{
 opacity: 0.6;
 
 }
+.book-price{
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-radius: 6px;
+    width: 91px;
+    background-color: white;
+    display: inline-block;
+    color: #6c5dd4;
+    border: 1px solid gray;
+    cursor: pointer;
 
-/* .overlay-btn{
-list-style: none;
-text-decoration: none;
-color: white;
-background: black;
-padding: 10px 0;
-position: absolute;
-top: 192px;
-border: 1px solid gray;
-width: 194px;
-text-align: center;
-left: 39px;
-cursor: pointer;
+}
+.book-price:hover{
+   color: white;
 
-} */
+   background-color: #6c5dd4;
 
+}
+.category{
+    cursor: pointer;
+    color: #6c5dd4;
+
+}
 @media only screen and (max-width: 1200px){
 .book-overlay {
     opacity: 0.2;
@@ -46,20 +52,7 @@ opacity: 0.6;
 
 
 }
-/* .overlay-btn {
-list-style: none;
-text-decoration: none;
-color: white;
-background: black;
-padding: 10px 0;
-position: absolute;
-top: 84px;
-border: 1px solid gray;
-width: 140px;
-text-align: center;
-left: 17px;
-cursor: pointer;
-}  */
+
 
 }
 
@@ -99,3 +92,41 @@ cursor: pointer;
 
 
 }
+
+@media screen and (max-width:800px) {
+#seller-section{
+    flex-direction: column !important;
+    display: flex;
+}
+.star-rate{
+    width: 139px;
+   margin-top:10px;
+}
+}
+/* start service-section */
+#service-icon{
+ color: #6c5dd4;
+    padding: 18px 0px;
+    font-size: 1.5rem;
+
+
+}
+/* End service-section */
+
+
+/* seller section  */
+.seller{
+    /* border: 1px solid #dee2e6!important; */
+    padding: 2px 10px;
+    width: 95px;
+    height: 38px;
+}
+.seller-category{
+        border: 1px solid #dee2e6!important;
+    padding: 1px 13px;
+    width: 95px;
+    cursor: pointer;
+    color: #6c5dd4;
+    height: 38px;
+}
+/* seller section  */

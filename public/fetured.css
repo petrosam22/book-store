@@ -1,0 +1,189 @@
+#star-rate{
+    border-radius: 17px;
+     /* padding: 3px; */
+    color: orange;
+}
+.feturd-overla{
+    opacity: 0.2;
+    position: absolute;
+    background-color: black;
+    width: 217px !important;
+    height: 341px !important;
+    border-radius: 12px;
+    /* bottom: 51%; */
+
+}
+.feturd-overla:hover{
+opacity: 0.6;
+
+}
+.feturd-overla:hover #search{
+
+opacity: 0.6;
+}
+.featured-cover{
+    width: 218px !important;
+    height: 341px !important;
+    border-radius: 12px;
+    position: relative;
+}
+#search{
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    top: 42%;
+    left: 42%;
+    opacity: -0.8;
+    cursor: pointer;
+}
+.overlay-show{
+    opacity: -1.2;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 78px;
+    margin-left: 77px;
+}
+.feturd-overla:hover .overlay-show{
+opacity: 0.6;
+
+}
+
+.categorybook{
+    color: #6c5dd4;
+    border: 1px solid gray;
+    padding: 1px;
+    background: white;
+
+}
+
+.categorybook:hover{
+    background-color: #6c5dd4;
+
+    color: white;
+
+}
+
+.f-price {
+    color: #6c5dd4;
+    font-size: 3.4rem;
+
+}
+.s-price{
+    font-size: 2.4rem;
+    font-weight: 200;
+}
+.addcart{
+    text-decoration: none;
+    color: white;
+    background: #6c5dd4;
+    padding: 14px 40px;
+
+}
+
+.addcart:hover{
+    transition: none;
+    border: none;
+
+}
+.book-deta{
+    width: 400px;
+}
+.showdetails{
+    text-decoration: none;
+    color:  #6c5dd4;
+}
+.showdetails:hover{
+    color:  #6c5dd4;
+border: none;
+}
+.book-descrip {
+    width: 50%;
+}
+
+
+@media screen and (max-width:800px) {
+#featured-section{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+.book-cart{
+    margin-top: 10px;
+}
+/* .pricedeta{
+    padding-left: 19vw;
+} */
+.book-descrip{
+    width: unset !important;
+}
+/* .feturd-overla{
+    left:27%;
+} */
+}
+
+@media screen and (max-width: 800px) {
+.book-deta {
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+}
+.addcart{
+    margin: 12px 0;
+}
+.fa-heart{
+        width: 36px;
+
+}
+}
+/* end fetured section  */
+/* start post section */
+.post-photo{
+    height: 27vh;
+    width: 258px;
+    border-radius: 11px;
+}
+.post-title{
+    font-size: 1rem;
+    padding-top: 10px;
+}
+
+.user_img{
+    width: 44px;
+    border-radius: 95px;
+}
+.desription{
+    width:75%;
+}
+.postowner{
+    display: flex;
+}
+.view{
+color:white;
+text-decoration: none;
+}
+
+.view:hover{
+    border: none;
+}
+.allpost{
+    padding: 12px 40px;
+    border-radius: 7px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    border: none;
+    background-color: #6c5dd4;
+}
+@media screen and (max-width:800px) {
+    .blog-container{
+        text-align: center !important;
+    }
+    .postowner{
+        display: inline-block !important;
+    }
+    .desription{
+        width:100%;
+    }
+
+
+}
+/* end post section */

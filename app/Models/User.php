@@ -3,10 +3,14 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Models\Book;
+use App\Models\Note;
+use App\Models\Post;
+use App\Models\Testimonial;
+use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
@@ -21,6 +25,10 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'type',
+        'avatar',
+        'facebook',
+        'youtube'
     ];
 
     /**
@@ -41,4 +49,17 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function posts(){
+        return $this->hasMany(Post::class);
+    }
+    public function books(){
+        return $this->hasMany(Book::class);
+    }
+    public function feedback(){
+        return $this->hasMany(Testimonial::class);
+    }
+    public function notes(){
+        return $this->hasMany(Note::class);
+    }
 }
